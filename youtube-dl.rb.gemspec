@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['saps.laj@gmail.com']
   spec.summary       = 'youtube-dl wrapper for Ruby'
   spec.description   = 'in the spirit of pygments.rb and MiniMagick, youtube-dl.rb is a command line wrapper for the python script youtube-dl'
-  spec.homepage      = 'https://github.com/layer8x/youtube-dl.rb'
+  spec.homepage      = 'https://github.com/giedriusrimkus/youtube-dl.rb'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'cocaine', '>=0.5.4'
+  spec.add_dependency 'terrapin'
 
   spec.add_development_dependency 'bundler', '>= 1.6'
   spec.add_development_dependency 'rake', '~> 10.0'
